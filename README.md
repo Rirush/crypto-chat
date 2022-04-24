@@ -23,7 +23,7 @@ go build -o server ./cmd/server
 No additional setup necessary, but there are some possible issues you might encounter:
 
 * Because this uses Web Crypto, in order to make this page functional, you need to have TLS working on non-localhost origins. 
-This server doesn't support TLS, so you'll need to have a reverse-proxy that provides TLS.
+This server doesn't support TLS, so you'll need to have a reverse-proxy that provides TLS. (that'll also require updating the frontend to use `wss://` instead of `ws://` protocol for WebSocket communication)
 
 * There's no way to export/import keys. If you refresh the page, the keys and message history are lost.
 
