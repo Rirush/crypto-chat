@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+}
+
+.chatbox {
+    height: 800px;
+    width: 1200px;
+    overflow: scroll;
+    border: 1px solid black;
+}
+
+.fingerprint {
+    font-weight: bold;
+}
+
+.fingerprint::after {
+    font-weight: normal;
+    content: ": ";
+}
